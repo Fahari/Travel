@@ -1,0 +1,230 @@
+html {
+  position: relative;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%); */
+  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+}
+header {
+  box-sizing: border-box;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
+section {
+  width: 100%;
+  height: 150vh;
+}
+section.sec.sec1 {
+  background: url(../images/adventure4.jpg);
+  background-size: cover;
+}
+section.sec.sec2 {
+  padding: 50px 100px 100px 100px;
+  box-sizing: border-box;
+  height: auto;
+}
+
+section.sec.sec3 {
+  background: url(../images/adventure2.jpg);
+  background-size: cover;
+  margin-bottom: 200px;
+}
+section.sec.sec4 {
+  padding: 50px 100px 100px 100px;
+  box-sizing: border-box;
+  height: auto;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  position: sticky;
+  top: 0%;
+  z-index: 30;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0 100px;
+  float: right;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  display: block;
+  color: #000;
+  padding: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 50px;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.quote {
+  text-transform: uppercase;
+  position: relative;
+  top: 0px;
+}
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  height: 295px;
+  right: 0;
+  width: 100%;
+  background-color: #aaaec1;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+.foot {
+  width: 100%;
+  height: 125px;
+}
+footer ul {
+  display: flex;
+  margin: 0;
+  padding: 0 100px;
+  justify-content: center;
+  margin-top: 30px;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  display: block;
+  color: #000;
+  padding: 0 20px;
+  text-decoration: none;
+  line-height: 50px;
+  align-content: center;
+  text-align: center;
+}
+footer ul li a:hover {
+  opacity: 0.5;
+}
+#three {
+  opacity: 0.5;
+}
+.social {
+  justify-content: space-around;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.vl {
+  border-left: 3px solid black;
+  height: 45px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0;
+  width: 100%;
+
+  /* float: right; */
+}
+.column {
+  display: flex;
+  /* flex-direction: column; */
+  /* flex-basis: 100%; */
+  flex: 1;
+  margin: 0 2px;
+  object-fit: contain;
+}
+
+/* #cf3 img {
+  position: absolute;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes cf3FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#cf3 img.top {
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
+} */
+
+@media (max-width: 480px) {
+  section.sec.sec2 {
+    padding: 10px 10px;
+    box-sizing: border-box;
+    height: auto;
+  }
+  section.sec.sec4 {
+    padding: 10px 10px;
+    box-sizing: border-box;
+    height: auto;
+  }
+  section.sec.sec1 {
+    /* background: url(adventure4.jpg); */
+    background-size: 100% 100%;
+    /* height: auto; */
+    width: 100%;
+    height: 300px;
+  }
+  section.sec.sec3 {
+    /* background: url(adventure4.jpg); */
+    background-size: 100% 100%;
+    /* height: auto; */
+    width: 100%;
+    height: 250px;
+  }
+  #one {
+    display: none;
+  }
+  #two {
+    display: none;
+  }
+
+  footer ul li a {
+    padding: 0px;
+    margin: 0 20px;
+  }
+
+  #three {
+    display: none;
+  }
+
+  nav ul {
+    padding: 0px;
+  }
+
+  nav ul li a {
+    padding: 0 5px;
+  }
+}
