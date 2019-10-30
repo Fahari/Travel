@@ -21,8 +21,8 @@ section {
   width: 100%;
   height: 150vh;
 }
-section.sec.sec1 {
-  background: url(../images/adventure4.jpg);
+.sec1 {
+  background: url(images/adventure4.jpg);
   background-size: cover;
 }
 section.sec.sec2 {
@@ -31,8 +31,8 @@ section.sec.sec2 {
   height: auto;
 }
 
-section.sec.sec3 {
-  background: url(../images/adventure2.jpg);
+.sec3 {
+  background: url(images/adventure2.jpg);
   background-size: cover;
   margin-bottom: 200px;
 }
